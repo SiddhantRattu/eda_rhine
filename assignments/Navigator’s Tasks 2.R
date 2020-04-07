@@ -25,7 +25,7 @@ ggplot(alterrunoff_stations) + geom_line(aes(x=area, y=altitude, color="pcs"))
 
 #task 4
 ggplot(data = runoff_stations, 
-aes(x = area, y = altitude, col = sname)) +
+aes(x = area, y = altitude, col = sname), hjust=0, vjust=0 ) +
 geom_point() +
-geom_text(aes(label=sname))
+geom_text(aes(label=sname),  hjust=0, vjust=0)
 
