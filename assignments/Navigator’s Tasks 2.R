@@ -13,6 +13,7 @@ alterrunoff_stations
 
 #task 2
 library(ggplot2)
+
 ggplot(data = alterrunoff_stations, 
 aes(x = area, y = altitude )) +
 geom_point() +
