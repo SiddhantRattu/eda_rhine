@@ -14,9 +14,9 @@ alterrunoff_stations
 #task 2
 library(ggplot2)
 ggplot(data = alterrunoff_stations, 
-       aes(x = area, y = altitude )) +
-  geom_point() +
-  geom_text(aes(label=sname))
+aes(x = area, y = altitude )) +
+geom_point() +
+geom_text(aes(label=sname))
 
 #task 3
 
@@ -25,7 +25,7 @@ ggplot(alterrunoff_stations) + geom_line(aes(x=area, y=altitude, color="pcs"))
 
 #task 4
 ggplot(data = runoff_stations, 
-       aes(x = area, y = altitude, col = sname)) +
-  geom_point() +
-  geom_text(aes(label=sname))
+aes(x = area, y = altitude, col = sname)) +
+geom_point() +
+geom_text(aes(label=sname))
 
