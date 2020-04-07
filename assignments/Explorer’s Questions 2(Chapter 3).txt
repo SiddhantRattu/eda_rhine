@@ -1,0 +1,21 @@
+Explorer's Questions
+ 
+1.
+
+runoff :- m**3/s
+
+2. 
+
+library(data.table)
+runoff_stations <- readRDS('./data/runoff_stations_raw.rds')
+average_runoff <- mean(runoff_stations$area)
+average_runoff
+:- 67069.5
+ 
+3.
+
+plot(average_runoff)
+
+4.
+
+yes because Altitude, like elevation, is the distance above sea level. Areas are often considered "high-altitude" 
