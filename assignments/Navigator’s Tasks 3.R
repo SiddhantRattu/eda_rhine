@@ -32,11 +32,12 @@ runoff_month_boxplot <- ggplot(runoff_month, aes(x=month, y=year, group=sname)) 
   geom_boxplot(aes(fill=sname))
 
 #task 4
+# not complete(notcorrect)
 
-runoff_stats <- runoff_day[, .(mean_day = mean(value),0),
-                               sd_day = sd(value),0),
-                               min_day = min(value),0),
-                               max_day = max(value).0), by = sname]
+runoff_stats <- runoff_day[, .(mean_day = round(mean(value), 0),
+                               sd_day = round(sd(value), 0),
+                               min_day = round(min(value), 0),
+                               max_day = round(max(value), 0)), by = sname]
 head(runoff_stats, 4)
 
 runoff_day_boxplot <- ggplot(runoff_day, aes(x=min_day, y=max_day, group=sname)) + 
@@ -46,6 +47,8 @@ runoff_day_boxplot
 
 
 # task 5
+# i will try it again
+
 library(data.table)
 
 ggplot(runoff_stations, aes(x=area, y=altitude, col=sname)) +geom_point() +
