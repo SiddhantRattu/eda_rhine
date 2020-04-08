@@ -1,0 +1,11 @@
+Explorer’s Questions
+
+1. 2-quantile is called the median,
+#The quantiles are values which divide the distribution such that there is a given 
+proportion of observations below the quantile.For example, the median is a quantile. 
+The median is the central value of the distribution,such that half the points are less than or 
+equal to it and half are greater than or equal to it.
+
+2. The converse is not true in general, as skewness does not imply that the mean is equal to the median
+
+! 4. Highest :- 3 month, 1815 year, 3536.4516 ! 
