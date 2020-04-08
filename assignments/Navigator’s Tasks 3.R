@@ -9,7 +9,7 @@ runoff_stats <- runoff_day[, .(mean_day = round(mean(value), 0),
                                max_day = round(max(value), 0)), by = sname]
 head(runoff_stats, 4)
 
-ggplot(runoff_stats, aes(x= min_day, y=max_day, col= sname ))+ geom_point()+
+ggplot(runoff_stats, aes(x= sname, y=mean_day, col= sname ))+ geom_point()+
        geom_point(size=2, shape=23)
          
 # task 2 
