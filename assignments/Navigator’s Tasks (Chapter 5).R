@@ -23,7 +23,7 @@ runoff_summer_key[year >= year_thres, period := factor('aft_2000')]
 to_plot <- rbind(cbind(runoff_winter_key, season = factor('winter')), 
                  cbind(runoff_summer_key, season = factor('summer'))) 
 
-ggplot(to_plot, aes(year, value, fill = period)) +
+ggplot(to_plot, aes(period, value, fill = period)) +
   geom_boxplot() +
   facet_wrap(~sname, scales = 'free_y') +
   scale_fill_manual(values = colset_4[c(4, 1)]) +
