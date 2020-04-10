@@ -4,16 +4,16 @@ list.file(data)
 library(ggplot2)
 library(moments)
 
-runoff_stats_tidy <- runoff_day[, .(mean_day = round(mean(value), 0),
-                               sd_day = round(sd(value), 0),
-                               min_day = round(min(value), 0),
-                               max_day = round(max(value), 0)), by = sname]
+#runoff_stats_tidy <- runoff_day[, .(mean_day = round(mean(value), 0),
+                               #sd_day = round(sd(value), 0),
+                               #min_day = round(min(value), 0),
+                               #max_day = round(max(value), 0)), by = sname]
 
 runoff_stats_tidy <- melt(runoff_stats, id.vars = 'sname')
 
 head(runoff_stats_tidy, 4)
 
-ggplot(runoff_stats_tidy, aes(x= sname, y=mean_day, col= sname ))+ geom_point()+
+ggplot(runoff_stats_tidy, aes(x= sname, y=value, col= sname ))+ geom_point()+
        geom_point(size=2, shape=23)
          
 # task 2 
