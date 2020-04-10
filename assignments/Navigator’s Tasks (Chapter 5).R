@@ -31,9 +31,7 @@ ggplot(to_plot, aes(period, value, fill = period)) +
   ylab(label = "Runoff (m3/s)") +
   theme_bw()
 
-
-
-
+#---|----
 
 
 ggplot(to_plot, aes(x = year, y = value)) +
@@ -61,8 +59,8 @@ ggplot(to_plot, aes(season, value, fill = period)) +
 
 library(data.table)
 library(ggplot2)
-
 runoff_day <- readRDS("./data/runoff_day_raw.rds")
+
 
 head(runoff_day)
 
