@@ -1,0 +1,26 @@
+task 1
+
+library(data.table)
+library(ggplot2)
+
+
+task 2
+
+precipitaion_day <- readRDS('data/precip_day.rds')
+
+precipitation_day[, .(precipitation = value), (date=date)]
+head(precipitaion_rhine_day)
+precipitaion_day$month <- 
+precipitaion_day$year <- 
+
+head(precipitaion_day)
+tail(precipitaion_day)
+
+task 3 
+
+changes in Rhine runoff mean and median values 
+
+task 4 
+
+analyses or other factors that should be examined like growth, fall precipitation, graphical analysis, mathematical evaluation
+influence runoff
